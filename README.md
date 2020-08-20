@@ -43,7 +43,7 @@ $ sudo docker pull docker pull ict-group/s2i-angular-httpd24
 To build your Angular app image with S2I, run:
 
 ```bash
-$ sudo s2i build <git_url> mprahl/s2i-angular-httpd24 <app_image_name>
+$ sudo s2i build <git_url> ict-group/s2i-angular-httpd24 <app_image_name>
 ```
 
 ### RHEL Based Image
@@ -52,13 +52,13 @@ This image is not on any public registries, so you must build it from scratch.
 To build it, run:
 
 ```bash
-$ sudo docker build -t mprahl/s2i-angular-httpd24-rhel7 https://raw.githubusercontent.com/mprahl/s2i-angular-httpd24/master/Dockerfile.rhel7
+$ sudo docker build -t ict-group/s2i-angular-httpd24-rhel7 https://raw.githubusercontent.com/ict-group/s2i-angular-httpd24/master/Dockerfile.rhel7
 ```
 
 To build your Angular app image with S2I, run:
 
 ```bash
-$ sudo s2i build <git_url> mprahl/s2i-angular-httpd24-rhel7 <app_image_name>
+$ sudo s2i build <git_url> ict-group/s2i-angular-httpd24-rhel7 <app_image_name>
 ```
 
 ## Testing

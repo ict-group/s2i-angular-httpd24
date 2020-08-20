@@ -14,10 +14,10 @@ spec:
         description: >-
           Build and run Angular 6+ apps based on the official
           centos/httpd-24-centos7 image. For more information about using this
-          builder image, see https://github.com/mprahl/s2i-angular-httpd24.
+          builder image, see https://github.com/ict-group/s2i-angular-httpd24.
         iconClass: icon-js
         tags: 'builder,angular,javascript' 
         supports: 'angular' 
       from:
         kind: DockerImage
-        name: 'mprahl/s2i-angular-httpd24:latest'
+        name: 'ict-group/s2i-angular-httpd24:latest'
