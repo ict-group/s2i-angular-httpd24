@@ -21,8 +21,6 @@ ng build --prod --base-href / --deploy-url /
     untrusted CA, you'll need to mount the certificate of the untrusted CA in
     the build container, and use the `npm_config_cafile` environment variable
     to point to the mounted CA certificate.
-* **BASE_HREF** 
-* **DEPLOY_URL** 
 
 All other environment variables from the base image can also be overriden.
 
@@ -39,7 +37,7 @@ To build an Angular Docker image, choose either the CentOS or RHEL based image.
 This image is available on DockerHub. To download it, run:
 
 ```bash
-$ sudo docker pull docker pull mprahl/s2i-angular-httpd24
+$ sudo docker pull docker pull ict-group/s2i-angular-httpd24
 ```
 
 To build your Angular app image with S2I, run:
@@ -70,8 +68,8 @@ This repository contains an Angular demo app produced from
 for testing purposes. To build a Docker image with this demo app, run:
 
 ```bash
-$ sudo s2i build https://github.com/mprahl/s2i-angular-httpd24 \
-    --context-dir=test/test-app/ mprahl/s2i-angular-httpd24 angular-demo-app
+$ sudo s2i build https://github.com/ict-group/s2i-angular-httpd24 \
+    --context-dir=test/test-app/ ict-group/s2i-angular-httpd24 angular-demo-app
 $ sudo docker run -p 8080:8080 angular-demo-app
 ```
 
@@ -97,7 +95,7 @@ this, run:
 ```bash
 $ oc create -f s2i-angular-httpd24.yml -n openshift
 ```
-
+ sudo s2i build https://github.com/ict-group/s2i-angular-httpd24 --context-dir=test/test-app/ ict-group/s2i-angular-httpd24 angular-demo-app
 To view the newly created image stream, run:
 
 ```bash
