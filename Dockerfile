@@ -1,7 +1,7 @@
 # s2i-angular-httpd24
 FROM centos/httpd-24-centos7
 
-MAINTAINER Matt Prahl <mprahl@redhat.com>
+MAINTAINER Fiorenzo Pizza <fiorenzo.pizza@ict-group.it>
 
 ENV SUMMARY="Platform for building and running Angular web applications" \
     DESCRIPTION="A Docker container based on centos/httpd-24-centos7 for \
@@ -20,7 +20,7 @@ ENV NAME=angular \
     NPM_CONFIG_LOGLEVEL=info
 
 LABEL summary="$SUMMARY" \
-      maintainer="Matt Prahl <mprahl@redhat.com>" \
+      maintainer="Fiorenzo Pizza <fiorenzo.pizza@ict-group.it>" \
       description="$DESCRIPTION" \
       name="$NAME-httpd24-centos7" \
       io.k8s.description="$DESCRIPTION" \
