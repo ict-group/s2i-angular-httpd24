@@ -10,6 +10,7 @@ official OpenShift documentation.
 ## Configuration
 
 The following configuration environment variables are specific to this image:
+ng build --prod --base-href / --deploy-url /
 
 * **NG_CONFIG** - the Angular configuration to pass to `ng build`. This
     defaults to `production`.
@@ -20,6 +21,8 @@ The following configuration environment variables are specific to this image:
     untrusted CA, you'll need to mount the certificate of the untrusted CA in
     the build container, and use the `npm_config_cafile` environment variable
     to point to the mounted CA certificate.
+* **BASE_HREF** 
+* **DEPLOY_URL** 
 
 All other environment variables from the base image can also be overriden.
 
